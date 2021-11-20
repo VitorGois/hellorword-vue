@@ -54,6 +54,19 @@
     <v-main>
       <router-view/>
     </v-main>
+
+    
+    <v-footer 
+      padless 
+      color="green accent-1"
+    >
+      <v-col
+        class="text-center"
+        cols="12"
+      >
+        {{ new Date().getFullYear() }} — <strong>Vitor Gois 190810</strong>
+      </v-col>
+    </v-footer>
   </v-app>
 </template>
 
