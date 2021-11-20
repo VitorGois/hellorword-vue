@@ -2,6 +2,7 @@
   <nav>
     <v-system-bar
       height="15"
+      app
     >
       <v-spacer></v-spacer>
       <v-icon>mdi-wifi-strength-4</v-icon>
@@ -31,6 +32,25 @@
       class="green accent-2"
     >
       <v-list>
+        <v-list-item class="px-3">
+          <v-list-item-avatar size="70">
+            <v-img src="../assets/profile.jpg"></v-img>
+          </v-list-item-avatar>
+        </v-list-item>
+
+        <v-list-item link>
+          <v-list-item-content>
+            <v-list-item-title class="text-h6">
+              Vitor Gois 190810
+            </v-list-item-title>
+            <v-list-item-subtitle>vitorcgois777@gmail.com</v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+
+      <v-divider></v-divider>
+
+      <v-list>
         <v-list-item 
           v-for="link in links" 
           :key="link.text" 
@@ -55,9 +75,8 @@
       return {
         drawer: false,
         links: [
-          { icon: 'dashboard', text: 'Dashboard', route: '/' },
-          { icon: 'folder', text: 'My Projects', route: '/projects' },
-          { icon: 'person', text: 'Team', route: '/team' },
+          { icon: 'home', text: 'Home', route: '/' },
+          { icon: 'info', text: 'About', route: '/about' },
         ]
       }
     }
