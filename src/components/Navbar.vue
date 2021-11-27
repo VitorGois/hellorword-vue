@@ -19,7 +19,8 @@
       flat
       app
     >
-      <v-app-bar-nav-icon @click="drawer = !drawer" class="grey--text"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click="changeDrawer()" class="grey--text"></v-app-bar-nav-icon>
+
       <v-toolbar-title class="text-uppercase grey--text">
         <span class="font-weight-light">Todo</span>
         <span>App</span>
@@ -34,16 +35,16 @@
       <v-list>
         <v-list-item class="px-3">
           <v-list-item-avatar size="70">
-            <v-img src="../assets/profile.jpg"></v-img>
+            <v-img :src="user.picture"></v-img>
           </v-list-item-avatar>
         </v-list-item>
 
         <v-list-item link>
           <v-list-item-content>
             <v-list-item-title class="text-h6">
-              Vitor Gois 190810
+              {{user.name}}
             </v-list-item-title>
-            <v-list-item-subtitle>vitorcgois777@gmail.com</v-list-item-subtitle>
+            <v-list-item-subtitle>{{user.email}}</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -71,13 +72,13 @@
 
 <script>
   export default {
-    data() {
-      return {
-        drawer: false,
-        links: [
-          { icon: 'home', text: 'Home', route: '/' },
-          { icon: 'info', text: 'About', route: '/about' },
-        ]
+    props: ['user'],
+    data: () => ({
+      drawer: false,
+    }),
+    methods: {
+      changeDrawer: function() {
+        this.drawer = !this.drawer;
       }
     }
   }
