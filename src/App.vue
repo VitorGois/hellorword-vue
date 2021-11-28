@@ -7,7 +7,6 @@
     />
     <NavigationDrawer
       :drawer="drawer"
-      :user="user"
     />
     
     <v-main>
@@ -37,11 +36,6 @@
     name: 'App',
     data: () => ({
       drawer: true,
-      user: {
-        name: 'Vitor Gois 190810',
-        email: 'vitorcgois777@gmail.com',
-        picture: 'profile.jpg'
-      }
     }),
     methods: {
       changeDrawer: function(drawer){

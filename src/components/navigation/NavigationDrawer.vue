@@ -23,16 +23,16 @@
 
     <v-list>
       <v-list-item 
-        v-for="link in links"
-        :key="link.text" 
+        v-for="component in menuComponents"
+        :key="component.text" 
         router 
-        :to="link.route"
+        :to="component.route"
       >
         <v-list-item-action>
-          <v-icon class="white--text">{{ link.icon }}</v-icon>
+          <v-icon class="white--text">{{ component.icon }}</v-icon>
         </v-list-item-action>
         <v-list-item-content>
-          <v-list-item-title class="white--text">{{ link.text }}</v-list-item-title>
+          <v-list-item-title class="white--text">{{ component.text }}</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
     </v-list>
@@ -41,6 +41,12 @@
 
 <script>
   export default {
-    props: ['drawer', 'user'],
+    props: ['drawer'],
+    data() {
+      return {
+        user: this.$store.state.user,
+        menuComponents: this.$store.state.menuComponents
+      }
+    }
   }
 </script>
