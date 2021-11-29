@@ -4,6 +4,7 @@ import Home from '../views/Home'
 import HelloWorld from '../views/HelloWorld'
 import About from '../views/About'
 import Calendar from '../views/Calendar'
+import RateUs from '../views/RateUs'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/calendar',
     name: 'Calendar',
     component: Calendar
+  },
+  {
+    path: '/rateus',
+    name: 'RateUs',
+    component: RateUs
   }
 ]
 

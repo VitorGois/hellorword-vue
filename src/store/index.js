@@ -8,6 +8,7 @@ export default new Vuex.Store({
     menuComponents: [
       { icon: 'home', text: 'Home', route: '/' },
       { icon: 'mdi-calendar', text: 'Calendar', route: '/calendar' },
+      { icon: 'mdi-star', text: 'Rate Us', route: '/rateus' },
       { icon: 'info', text: 'About', route: '/about' },
     ],
     user: {
