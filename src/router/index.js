@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home'
 import HelloWorld from '../views/HelloWorld'
 import About from '../views/About'
+import Calendar from '../views/Calendar'
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,11 @@ const routes = [
     name: 'helloWorld',
     component: HelloWorld
   },
+  {
+    path: '/calendar',
+    name: 'Calendar',
+    component: Calendar
+  }
 ]
 
 const router = new VueRouter({

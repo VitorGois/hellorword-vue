@@ -7,6 +7,7 @@ export default new Vuex.Store({
   state: {
     menuComponents: [
       { icon: 'home', text: 'Home', route: '/' },
+      { icon: 'mdi-calendar', text: 'Calendar', route: '/calendar' },
       { icon: 'info', text: 'About', route: '/about' },
     ],
     user: {
