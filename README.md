@@ -1,7 +1,13 @@
 # helloworld-vue
 
-## APP Preview
-![image](https://user-images.githubusercontent.com/69533533/142714878-0fac0d37-244f-423e-a1b8-acaeaaa43460.png)
+## APP Preview (Home)
+![image](https://user-images.githubusercontent.com/69533533/143795259-29f3eb47-55ce-4104-b618-9451e4f4d076.png)
+## APP Preview (Calendar)
+![image](https://user-images.githubusercontent.com/69533533/143795277-b6766bf3-4637-4adf-b35c-35493ff8e2a4.png)
+## APP Preview (Rate Us)
+![image](https://user-images.githubusercontent.com/69533533/143795296-515eadee-935c-4a05-bfda-f906852d4089.png)
+## APP Preview (About)
+![image](https://user-images.githubusercontent.com/69533533/143795301-5a24b6e7-c4fa-4e06-a0f7-8833513e6780.png)
 
 ## Project setup
 ```
