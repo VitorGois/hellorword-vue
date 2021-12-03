@@ -5,6 +5,7 @@ import HelloWorld from '../views/HelloWorld'
 import About from '../views/About'
 import Calendar from '../views/Calendar'
 import RateUs from '../views/RateUs'
+import EasterEgg from '../views/EasterEgg'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,11 @@ const routes = [
     path: '/rateus',
     name: 'RateUs',
     component: RateUs
+  },
+  {
+    path: '/easter',
+    name: 'easterEgg',
+    component: EasterEgg
   }
 ]
 
