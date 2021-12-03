@@ -26,6 +26,10 @@
       todoList() {
         return this.$store.getters.allTodos
       }
+    },
+    created() {
+      if (this.$store.getters.allTodos === null) 
+        this.$store.dispatch("fetchTodoList");
     }
   }
 </script>
