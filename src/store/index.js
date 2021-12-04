@@ -32,7 +32,6 @@ export default new Vuex.Store({
           return res.json();
         })
         .then((data) => {
-          console.log('tchau');
           const payload = data.todoList;
           this.commit('SET_TODOLIST', payload);
         })

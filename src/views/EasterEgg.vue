@@ -41,7 +41,6 @@
     },
     methods: {
       fetch() {
-        console.log('oi');
         axios.get('https://dog.ceo/api/breeds/image/random')
           .then((res) => {
             this.dog = res.data.message;
